@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="registration.js" defer></script>
+    <style>
+
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Setting the font family */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/login-page-b62fb.appspot.com/o/add.jpg?alt=media&token=6c5d7924-cb00-4c34-b0a7-d474c1990487");
+    background-size: cover; /* Covering the entire background */
+    background-repeat: no-repeat; 
+    background-position: center; /* Centering the background image */
+    overflow-x: hidden;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+    font-size: larger;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 97%;
+    padding: 10px;
+    background-color: rgb(22, 163, 219); 
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Setting the font family */
+    font-weight: bold;
+
+}
+p{
+  padding-left: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif; /* Setting the font family */
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+header{
+  background-color: rgba(43, 161, 207); 
+  color:rgb(70, 137, 231);
+}
+
+footer{
+  background-color: rgba(43, 161, 207); 
+  color:rgb(70, 137, 231);
+  margin-top: 9%;
+}
+
+header,footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color:whitesmoke;
+    padding-left: 70px;
+    font-size:20px ;
+}
+
+.logo {
+    align-self: flex-start;
+}
+
+nav {
+    align-self: flex-end;
+}
+
+
+
+
+.id1{
+  padding-top: 20px;
+  color:rgb(5, 5, 107);
+  margin-top: 30px;
+  text-align: center;
+  font-size: 45px;
+}
+
+.contact1 {
+    width: 350px;
+    margin: 6vh auto 0 auto;
+    padding: 30px;
+    background-color: rgba(108, 199, 233, 0.4); /* Add some transparency to make the background image visible */
+    border-radius: 13px;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow with transparency */
+    border: 3px solid rgba(43, 161, 207); /* Set border with desired color */
+}
+.contact label{
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.contact input {
+    display: flex;
+    flex-direction: column;
+    /* border-color: rgb(26, 24, 26); */
+    border-radius: 5px;
+    border-width: 3px;
+    font-size: 15px;
+    padding: 13px;
+    width: 90%;
+    border-color:  rgba(94, 176, 209, 0.2); 
+    background-color: rgba(43, 161, 207, 0.2); /* Add some transparency to make the background image visible */
+}
+
+
+    </style>
+  </head>
+  <body>
+  
+    <header>
+      <div class="logo">
+         <h1>Book World!</h1>
+      </div>
+      <!-- <nav>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav> -->
+   </header>
+
+    <br>
+
+   <h1 class="id1">Login</h1>
+
+    <div class="contact1">
+       
+        <form id="login-form">
+          <div class="contact">
+            <label for="email">Email</label>
+            <input type="email" placeholder=" " id="email" name="email" required><br>
+          </div>
+          <div class="contact">
+            <label for="password">Password</label>
+            <input type="password" placeholder=" " id="password" name="password" required><br>
+          </div>
+            <button id="submit" type="submit">Login</button><br>
+        </form>
+       
+    </div>
+    <!-- <footer>
+      <h2 style="  text-align: center;
+      padding-left: 40%;">&copy:All Right Reserved</h2>
+  </footer>
+    -->
+    
+</body>
+</html>
